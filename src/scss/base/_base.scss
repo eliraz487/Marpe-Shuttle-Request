@@ -1,0 +1,52 @@
+* ,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: Assistant;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--background-color-ng-container);
+  color: var(--Text-color-text);
+}
+
+html{
+  font-size: 62.5%; // now rem = 10px
+  font-family: Assistant;
+
+  @media only screen and  (max-width: 1900px) {
+    font-size: 55%;
+
+  }
+
+  @media only screen and  (max-width: 1800px) {
+    font-size: 50%;
+
+  }
+
+  @media only screen and  (max-width: 1650px) {
+    font-size: 45%;
+  }
+
+  @media only screen and  (max-width: 1550px) {
+    font-size: 42.5%;
+  }
+  @media only screen and  (max-width: 1450px) {
+    font-size: 40%;
+  }
+  @media only screen and  (max-width: 1300px) {
+    font-size: 35%;
+  }
+
+
+
+}
