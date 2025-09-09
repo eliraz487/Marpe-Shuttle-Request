@@ -1,0 +1,17 @@
+.header {
+  padding-bottom: 0.5rem;
+
+  padding-right: 2rem;
+
+  border-bottom: 1px solid #ccc;
+
+  &-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+}

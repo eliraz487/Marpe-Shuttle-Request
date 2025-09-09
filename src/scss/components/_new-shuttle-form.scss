@@ -1,0 +1,41 @@
+.form {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: auto;
+  align-items: end;
+  column-gap: 2.4rem;
+  padding: 2rem;
+
+  margin-top: 1.6rem;
+
+  &--span {
+    grid-column: span 2;
+
+    margin-bottom: 3.2rem;
+
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  &-item {
+    width: 100%;
+    grid-column: span 2;
+  }
+
+  &--button {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+
+    grid-column: span 2;
+
+    &--submit {
+      flex: 1;
+    }
+
+    &--clear {
+      width: 9.6rem;
+    }
+  }
+}

@@ -2,3 +2,14 @@
 @import './base/typography';
 @import './base/base';
 
+//components
+@import './components/new-shuttle-form';
+@import './components/check-list-with-search';
+@import './components/main-screen/main-screen-header';
+@import './components/main-screen/main-screen-info';
+@import './components/new-shuttle-form';
+@import './components/success-form';
+
+//pages
+@import './pages/home-page';
+

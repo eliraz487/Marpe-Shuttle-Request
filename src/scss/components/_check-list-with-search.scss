@@ -1,0 +1,37 @@
+.checklist {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  padding: 1.6rem;
+
+  direction: rtl;
+  &__search {
+    direction: ltr;
+    text-align: end;
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+  }
+
+  &__search {
+    margin-bottom: 1.2rem;
+  }
+
+  &__list {
+    flex: 1;
+    overflow: auto;
+  }
+
+  &__button {
+    margin-top: 1.6rem;
+  }
+}
+
+.adm-popup-body {
+  height: 60vh;
+}
+.adm-input-element {
+  text-align: end !important;
+}
