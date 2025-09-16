@@ -2,11 +2,13 @@ import { CheckCircleTwoTone } from "@ant-design/icons";
 import { Button } from "antd";
 import MarpaContactInfo from "./MarpaContactInfo";
 import { deleteCookie } from "../functions/cookies";
+import { useNavigate } from "react-router-dom";
 
 interface ISuccessForm {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export default function SuccessForm({ setIsOpen }: ISuccessForm) {
+  const navigate = useNavigate();
   const handleClick = () => {
     setIsOpen(false);
     deleteCookie("agreePolicy");
