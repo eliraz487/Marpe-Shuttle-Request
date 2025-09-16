@@ -76,7 +76,7 @@ export default function HomePage() {
           {!sendForm ? (
             <NewShuttleForm onSubmit={handleSubmit} />
           ) : (
-            <SuccessForm />
+            <SuccessForm setIsOpen={setSendForm} />
           )}
         </div>
       </div>

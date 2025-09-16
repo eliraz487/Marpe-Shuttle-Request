@@ -1,8 +1,17 @@
 import { CheckCircleTwoTone } from "@ant-design/icons";
 import { Button } from "antd";
 import MarpaContactInfo from "./MarpaContactInfo";
+import { deleteCookie } from "../functions/cookies";
 
-export default function SuccessForm() {
+interface ISuccessForm {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export default function SuccessForm({ setIsOpen }: ISuccessForm) {
+  const handleClick = () => {
+    setIsOpen(false);
+    deleteCookie("agreePolicy");
+  };
+
   return (
     <>
       <div className="success-form">
@@ -17,7 +26,10 @@ export default function SuccessForm() {
           <span className="success-form__container--message">
             אנו נעדכן אתכם בהודעת Whatsapp עד השעה 20:30 את שעת האיסוף המדויקת.
           </span>
-          <Button className="success-form__container--button">
+          <Button
+            onClick={handleClick}
+            className="success-form__container--button"
+          >
             מילוי טופס נוסף
           </Button>
         </div>
