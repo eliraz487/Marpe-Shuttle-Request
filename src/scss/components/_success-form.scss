@@ -54,3 +54,10 @@
     }
   }
 }
+.adm-picker{
+  height: 30rem !important;
+  width: 100vw;
+  &-header{
+    padding: 0.4rem 2rem !important;
+  }
+}
