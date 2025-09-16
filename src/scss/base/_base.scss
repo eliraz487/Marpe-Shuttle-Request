@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+body { touch-action: pan-x pan-y; }
+
+
 #root {
   height: 100%;
   width: 100%;
